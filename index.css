@@ -1,0 +1,95 @@
+.bodyClass{
+	width:100vw;
+	height:100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin: -8px;
+	position: relative;
+	perspective: 10px;
+	font-family: "Poppins";
+}
+
+.headerContainer{
+	background-color: #635;
+	z-index: 1;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	top: 0;
+}
+.headerContainer a{
+	margin:10px;
+	transition: 1s;
+	font-size: 1.25em;
+}
+
+.headerContainer a:hover{
+	transform: rotate(36000deg);
+	color:white;
+	font-size: 2em;
+}
+
+.imageContainer{
+	width: 100vw;
+	height:100vw;
+	position: relative;
+	background-color: rgba(0,0,0,0.2);
+	margin:0px;
+	transform-style: preserve-3d;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+}
+
+.imageContainer p{
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+	padding:10px;
+	animation: fadeInAnim 1s forwards;
+}
+
+
+.backImage{
+	position: absolute;
+	width:100vw;
+	margin:0px;
+	z-index: -1;
+	transform: translateZ(-8px) scale(2);
+}
+
+.article{
+	position: relative;
+	/*background-color: #999;*/
+	background-image:linear-gradient(to bottom, #AAA , #666);
+	font-size: 1.5em;
+	margin: 0px;
+	padding: 10px;
+}
+
+.article section h4,h3{
+	text-decoration: underline;
+}
+
+.footer{
+	position: relative;
+	background-color: #333;
+	margin: 0px;
+	padding: 10px;
+	color: white;
+}
+
+
+@keyframes fadeInAnim{
+	0%{
+		transform:translateY(100px);
+		color:transparent;
+	}
+	100%{
+		transform:translateY(0px);
+		color:white;
+	}
+}
